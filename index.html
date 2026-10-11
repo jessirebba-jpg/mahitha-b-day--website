@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Special Website ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #160d15;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #moduleTitle {
+      padding: 14px 8px;
+      font-size: 20px;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 72vh;
+      border: none;
+      background: white;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      padding: 16px 8px;
+    }
+
+    button {
+      border: none;
+      border-radius: 25px;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #ff8fbd;
+      color: #351326;
+    }
+
+    button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    #music {
+      position: sticky;
+      bottom: 0;
+      background: #160d15;
+      padding: 10px;
+      border-top: 1px solid #58354b;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 450px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="moduleTitle">Module 1 of 7 ❤️</div>
+
+  <iframe
+    id="moduleFrame"
+    title="Website module"
+    src="module1.html">
+  </iframe>
+
+  <div class="buttons">
+    <button id="backBtn" onclick="goBack()" disabled>
+      ⬅ Back
+    </button>
+
+    <button id="nextBtn" onclick="goNext()">
+      Next ➜
+    </button>
+  </div>
+
+  <div id="music">
+    <audio controls loop>
+      <source src="audio.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+  </div>
+
+  <script>
+    const modules = [
+      "module1.html",
+      "module2(3).html",
+      "module3(4).html",
+      "module4(3).html",
+      "module5(3).html",
+      "module6(4).html",
+      "modul7.html"
+    ];
+
+    let current = 0;
+
+    const frame = document.getElementById("moduleFrame");
+    const title = document.getElementById("moduleTitle");
+    const backBtn = document.getElementById("backBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function showModule() {
+      frame.src = modules[current];
+      title.textContent =
+        "Module " + (current + 1) + " of " + modules.length + " ❤️";
+
+      backBtn.disabled = current === 0;
+
+      nextBtn.disabled = current === modules.length - 1;
+      nextBtn.textContent =
+        current === modules.length - 1
+          ? "Finished ❤️"
+          : "Next ➜";
+    }
+
+    function goNext() {
+      if (current < modules.length - 1) {
+        current++;
+        showModule();
+      }
+    }
+
+    function goBack() {
+      if (current > 0) {
+        current--;
+        showModule();
+      }
+    }
+  </script>
+
+</body>
+</html>
+```
