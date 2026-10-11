@@ -1,30 +1,167 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Great+Vibes&display=swap" rel="stylesheet">
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Happiest Birthday mahiii🫠❤️‍🩹</title>
-<style>
-:root{--pink:#d52f62;--ink:#65414b;--muted:#a77c86;--mint:#e8fbf3}
-*{box-sizing:border-box}body{margin:0;min-height:100svh;overflow-x:hidden;display:flex;align-items:center;justify-content:center;padding:25px 14px 70px 14px;background:radial-gradient(ellipse at 50% 38%,#fffdf9 0,#fff6f3 48%,#f8dbe4 100%);font-family:Georgia,'Times New Roman',serif;color:var(--ink)}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#dca0b2 1px,transparent 1px);background-size:10px 10px;opacity:.18;mask-image:linear-gradient(transparent 15%,black 100%)}
-.card{position:relative;width:min(100%,660px);min-height:min(83svh,1120px);padding:40px 25px 28px;border:1px solid #fff;border-radius:42px;background:rgba(255,250,246,.88);box-shadow:0 20px 65px #bd6b8522,inset 0 0 30px #fff9;display:flex;flex-direction:column;align-items:center;text-align:center;animation:open .9s ease-out both}
-@keyframes open{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
-.kicker{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#bd647e;font-weight:bold;margin:0 0 25px}h1{font-size:clamp(36px,8vw,62px);font-weight:400;font-style:italic;line-height:1.04;margin:0;color:#68404c}h1 span{display:block;color:#d73568}.sub{font-size:clamp(15px,3.5vw,22px);letter-spacing:1px;color:#a47782;margin:28px 0 0}.art{width:min(76%,350px);height:auto;object-fit:contain;margin:25px auto 8px;border-radius:12px;mix-blend-mode:multiply;animation:bob 3.8s ease-in-out infinite}@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-.prompt{font-size:clamp(17px,4vw,26px);font-weight:bold;margin:18px 0 28px;line-height:1.4}.buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;width:100%}button{font:700 17px Georgia,serif;border-radius:22px;padding:17px 24px;cursor:pointer;transition:transform .2s,filter .2s;min-width:150px}button:active{transform:scale(.96)}.yes{border:0;color:white;background:linear-gradient(135deg,#e33e72,#c92359);box-shadow:0 7px 0 #ad204d,0 12px 22px #d52f6233}.no{background:var(--mint);color:#6d9385;border:1px solid #b8e6d5;box-shadow:0 6px 0 #c7e8dc}.hint{font-size:14px;color:#b77e8e;margin:19px 0 20px}.reply{font-size:16px;color:#bc456c;min-height:25px;margin:0 0 8px}.footer{margin-top:auto;padding-top:40px;color:#bd8795;font-size:12px;letter-spacing:3px}.float{position:fixed;top:-40px;z-index:5;pointer-events:none;animation:fall linear infinite;opacity:.85}@keyframes fall{to{transform:translateY(110svh) rotate(300deg)}}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happiest Birthday Mahiii ❤️</title>
 
-/* Music Bar Styling */
-.music-bar{position:fixed;bottom:15px;background:rgba(255,255,255,0.9);padding:8px 20px;border-radius:30px;box-shadow:0 4px 15px rgba(189,107,133,0.2);display:flex;align-items:center;gap:12px;font-size:13px;z-index:10;color:var(--ink);border:1px solid #f8dbe4;}
-.music-bar button{padding:6px 14px;min-width:auto;font-size:12px;border-radius:15px;background:var(--pink);color:white;border:none;box-shadow:none;}
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
 
-.card h1{font-family:"Playfair Display",Georgia,serif;font-weight:600;letter-spacing:-.025em}
-.card h1 span{font-family:"Great Vibes","Playfair Display",cursive;font-weight:500;letter-spacing:0}
-</style></head>
+    #moduleFrame {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      border: none;
+    }
+  </style>
+</head>
+
 <body>
-<main class="card"><p class="kicker">✦ A tiny page made with love ✦</p>
-<h1>Happiest Birthday,<span>mahiii🫠❤️‍🩹</span></h1>
-<p class="sub">today, the universe is celebrating you ♡</p>
-<img class="art" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW0AAAE7CAIAAACZtEefAADlmUlEQVR4nOz9d5gd13EnDFfV6b6TMMiDQQYmAWCOEpUoRgADkFSwbMnrDd/69crWSpTEXW/eb9/ved993tf27tqmRIqWvY7r3bV3LVsSCRJEYJJEiqJIUYzA5EEOg8EETLq3+1R9f1T3uX3j3EkASKIePOSdDqdPnz6nToVfValFMXYAPJIkIIgIAEIm1ehA9D0SAGfQUAIhEP1gAQDDbAgq4IqyQTxJ/iJkBgIiK94c5+ztxvNT1C07aCSw4joWHkncJIGflyOGIpEQAAZGLMW4KE21KwbhdWtKvot9A+6bf0Rhz6Tp12ZF3qTtwySjLR2JCRLBWRJAIRPQCiX/opYXArCurEA5ykAKGqlDOg5qmr7oi7dtvSSHOSISqbkYAXAQAQAgADQCoAkAUABGgInjQEIALIPxIP7u6+H69f1r73o2pXq1o6W2bJ9+Pae/efPnz+vD5vP8FwL1Ew0Q5SqaZJ5eSKSqkkjUvFvV5V6K1cptkH77197/f/727f/7t3/+0/2vP//8f//2v//+t//73///v//f//f//7//7//ff//f//f//f//fff//f//v//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f|//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//f//
-  
+  <audio id="bgMusic" src="./audio.mp3" autoplay loop preload="auto"></audio>
+
+  <iframe
+    id="moduleFrame"
+    title="Mahiii's Birthday Surprise"
+    src="module1.html"
+    allow="autoplay; fullscreen"
+  ></iframe>
+
+  <script>
+    /*
+      MAHIII'S BIRTHDAY WEBSITE
+      Module 1 → 2 → 3 → 4 → 5 → 6 → 7
+    */
+
+    const birthdayModules = [
+      "module1.html",
+      "module2.html",
+      "module3.html",
+      "module4.html",
+      "module5.html",
+      "module6.html",
+      "module7.html"
+    ];
+    const bgMusic = document.getElementById("bgMusic");
+
+bgMusic.volume = 0.45;
+
+bgMusic.play().catch(() => {});
+
+function startBirthdayMusic() {
+  if (bgMusic.paused) {
+    bgMusic.play().catch(() => {});
+  }
+}
+
+    const musicFrame = document.getElementById("moduleFrame");
+
+musicFrame.addEventListener("load", () => {
+  try {
+  musicFrame.contentDocument.addEventListener(
+  "click",
+  startBirthdayMusic
+);
+
+musicFrame.contentDocument.addEventListener(
+  "touchstart",
+  startBirthdayMusic
+);
+    );
+  } catch (error) {
+    console.log("Could not attach music listener.");
+  }
+});
+document.addEventListener("click", startBirthdayMusic);
+
+const frame = document.getElementById("moduleFrame");
+let currentModule = 0;
+
+    function goToModule(number) {
+      if (number < 0 || number >= birthdayModules.length) {
+        return;
+      }
+
+      currentModule = number;
+      frame.src = birthdayModules[currentModule];
+    }
+
+    function nextModule() {
+      if (currentModule < birthdayModules.length - 1) {
+        goToModule(currentModule + 1);
+      }
+    }
+
+    function connectModuleButtons() {
+      try {
+        const doc = frame.contentDocument;
+
+        if (!doc) return;
+
+        // Prevent adding duplicate listeners after the same page reloads.
+        if (doc.documentElement.dataset.birthdayConnected === "yes") {
+          return;
+        }
+
+        doc.documentElement.dataset.birthdayConnected = "yes";
+
+        doc.addEventListener("click", function (event) {
+          const button = event.target.closest(
+            'button, input[type="button"], input[type="submit"], a'
+          );
+
+          if (!button) return;
+
+          const label = (
+            button.innerText ||
+            button.value ||
+            button.getAttribute("aria-label") ||
+            ""
+          ).trim().toLowerCase().replace(/\s+/g, " ");
+
+          let shouldAdvance = false;
+
+          // MODULE 1: Only "Yes show me" advances.
+          if (currentModule === 0) {
+            shouldAdvance = /yes\s*,?\s*show\s*me/.test(label);
+          }
+
+          // MODULES 2–5: Continue buttons advance to the next module.
+          else if (currentModule >= 1 && currentModule <= 4) {
+            shouldAdvance = /\bcontinue\b|\bnext module\b/.test(label);
+          }
+
+          // MODULE 6: Continue to the final gift module.
+          else if (currentModule === 5) {
+            shouldAdvance = /\bcontinue\b|\bnext module\b/.test(label);
+          }
+
+          // MODULE 7 is the final celebration.
+          if (shouldAdvance) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            nextModule();
+          }
+        }, true);
+
+      } catch (error) {
+        console.error(
+          "Could not connect module buttons. Check that all files are on the same GitHub Pages site.",
+          error
+        );
+      }
+    }
+
+    frame.addEventListener("load", connectModuleButtons);
+  </script>
+
+</body>
+</html>
