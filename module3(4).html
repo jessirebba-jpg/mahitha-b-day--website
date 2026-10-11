@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Birthday Wish 🎂</title>
+<style>
+:root{--pink:#f8dce5;--rose:#a64d68;--cream:#fffaf7;--mint:#cce8df}
+*{box-sizing:border-box}body{margin:0;min-height:100svh;overflow:hidden;font-family:Georgia,'Times New Roman',serif;color:var(--rose);background:radial-gradient(ellipse at 50% 35%,#fffdfb 0%,#fff4f2 45%,#f6dce5 100%)}
+.bg{position:fixed;inset:0;pointer-events:none;overflow:hidden}.bg span{position:absolute;bottom:-12vh;left:var(--x);font-size:var(--s);opacity:.55;animation:rise var(--t) linear var(--d) infinite;filter:drop-shadow(0 2px 4px #fff)}@keyframes rise{0%{transform:translate(0,0) rotate(0);opacity:0}10%{opacity:.65}50%{transform:translate(var(--sway),-55vh) rotate(15deg)}100%{transform:translate(calc(var(--sway)*-.7),-120vh) rotate(-15deg);opacity:0}}
+main{position:relative;z-index:1;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px 18px 30px}.eyebrow{font:600 11px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c18b9c;margin:0 0 13px}h1{font-size:clamp(25px,6vw,36px);font-weight:normal;line-height:1.2;margin:0 0 8px;color:#98445f}.sub{font-size:15px;color:#b47d8e;margin:0}.stage{width:min(92vw,380px);height:330px;position:relative;margin:4px auto 0;display:grid;place-items:center}.glow{position:absolute;width:240px;height:210px;border-radius:50%;background:#ffe7a5;filter:blur(36px);opacity:.42;transition:opacity .8s}.cake-art{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 12px 12px #b88d9b24)}.flame{transform-origin:200px 84px;animation:flicker .65s ease-in-out infinite alternate;transition:opacity .35s,transform .35s}.flame-core{transform-origin:200px 84px;animation:flicker .42s ease-in-out infinite alternate-reverse}@keyframes flicker{from{transform:rotate(-5deg) scale(.94,1.04)}to{transform:rotate(5deg) scale(1.06,.94)}}.smoke{opacity:0;transition:opacity .3s}.blown .flame,.blown .flame-core{opacity:0;transform:scale(.1) translateY(12px);animation:none}.blown .smoke{opacity:.75}.blown .glow{opacity:.12}.prompt{min-height:52px;font-size:18px;line-height:1.4;margin:0 0 15px}.prompt strong{font-weight:normal;font-style:italic;color:#9c4d67}.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.btn{border:0;border-radius:999px;padding:14px 20px;font:600 14px Arial,sans-serif;cursor:pointer;box-shadow:0 6px 16px #c28da12a;transition:transform .2s,background .2s}.btn:active{transform:scale(.97)}.primary{background:#b65f7c;color:white}.secondary{background:#fff9fa;color:#a65c74;border:1px solid #f0ced9}.status{min-height:19px;font:12px Arial,sans-serif;color:#b27b8d;margin:12px 0 0}.wish{position:fixed;z-index:4;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:25px;background:linear-gradient(145deg,#fffaf8eF,#f9e2e9ee);opacity:0;visibility:hidden;transition:opacity 1s;backdrop-filter:blur(4px)}.wish.show{opacity:1;visibility:visible}.wish .wish-icon{font-size:52px;animation:heartbeat 1.5s ease-in-out infinite}.wish h2{font-weight:normal;font-style:italic;font-size:clamp(30px,8vw,43px);line-height:1.25;margin:15px 0;color:#98445f}.wish p{font-size:16px;color:#b47d8e}.wish button{margin-top:14px}@keyframes heartbeat{50%{transform:scale(1.1)}}
+@media(max-height:700px){main{padding-top:14px;padding-bottom:14px}.stage{height:260px}.prompt{margin-bottom:8px}.eyebrow{margin-bottom:7px}}
+@media(prefers-reduced-motion:reduce){.bg span{animation-duration:20s}.flame,.flame-core{animation-duration:1.2s}}
+</style></head><body>
+<div class="bg" aria-hidden="true"><span style="--x:4%;--s:25px;--t:12s;--d:-4s;--sway:20px">💗</span><span style="--x:13%;--s:21px;--t:9s;--d:-7s;--sway:-16px">✨</span><span style="--x:23%;--s:28px;--t:14s;--d:-2s;--sway:22px">🌸</span><span style="--x:34%;--s:22px;--t:10s;--d:-8s;--sway:-20px">💕</span><span style="--x:44%;--s:25px;--t:13s;--d:-5s;--sway:18px">🎀</span><span style="--x:55%;--s:22px;--t:9s;--d:-1s;--sway:-15px">✨</span><span style="--x:65%;--s:27px;--t:12s;--d:-9s;--sway:19px">🦋</span><span style="--x:75%;--s:22px;--t:11s;--d:-3s;--sway:-22px">💖</span><span style="--x:85%;--s:26px;--t:14s;--d:-6s;--sway:17px">🌷</span><span style="--x:94%;--s:22px;--t:10s;--d:-2s;--sway:-18px">💫</span><span style="--x:8%;--s:23px;--t:15s;--d:-11s;--sway:17px">🌼</span><span style="--x:29%;--s:22px;--t:12s;--d:-10s;--sway:-17px">💞</span><span style="--x:49%;--s:27px;--t:16s;--d:-7s;--sway:22px">🌸</span><span style="--x:70%;--s:22px;--t:13s;--d:-12s;--sway:-16px">💗</span><span style="--x:90%;--s:25px;--t:15s;--d:-9s;--sway:20px">🎀</span></div>
+<main><p class="eyebrow">A little birthday magic</p><h1>Blow the candle, Mahii 💗</h1><p class="sub">Make a wish, just for you ♡</p>
+<div class="stage" id="stage"><div class="glow"></div>
+<svg class="cake-art" viewBox="0 0 400 330" role="img" aria-label="Cute little birthday character holding a cake with a lit candle">
+<ellipse cx="202" cy="296" rx="104" ry="13" fill="#d9cfd0" opacity=".45"/>
+<!-- cute rounded character -->
+<path d="M91 264 C76 242 78 210 91 176 C103 143 120 113 147 99 L151 65 L179 91 C206 84 242 99 263 124 C285 150 299 186 294 225 C291 258 270 278 239 281 L130 281 C113 279 99 273 91 264Z" fill="#fffefa" stroke="#292322" stroke-width="7" stroke-linejoin="round"/>
+<!-- party hat -->
+<path d="M151 67 L179 91 L224 113 L171 119 L148 104Z" fill="#8ed6e4" stroke="#292322" stroke-width="6" stroke-linejoin="round"/><circle cx="150" cy="60" r="9" fill="#f4d96e" stroke="#292322" stroke-width="4"/>
+<!-- face -->
+<ellipse cx="160" cy="168" rx="8" ry="10" fill="#292322"/><ellipse cx="220" cy="168" rx="8" ry="10" fill="#292322"/><ellipse cx="139" cy="187" rx="13" ry="8" fill="#f5c6b9" opacity=".8"/><ellipse cx="239" cy="187" rx="13" ry="8" fill="#f5c6b9" opacity=".8"/><path d="M180 177 Q190 190 201 177" fill="none" stroke="#292322" stroke-width="5" stroke-linecap="round"/>
+<!-- little arms -->
+<path d="M137 221 Q158 244 184 238" fill="none" stroke="#292322" stroke-width="7" stroke-linecap="round"/><path d="M246 220 Q235 241 218 240" fill="none" stroke="#292322" stroke-width="7" stroke-linecap="round"/>
+<!-- cake plate -->
+<ellipse cx="224" cy="267" rx="91" ry="13" fill="#d7e8e6" stroke="#292322" stroke-width="4"/><path d="M151 224 Q224 207 292 224 L285 254 Q222 276 159 254Z" fill="#f4d3b7" stroke="#292322" stroke-width="5"/><path d="M151 224 Q169 238 186 224 T222 224 T258 224 T292 224" fill="none" stroke="#fff8ec" stroke-width="10" stroke-linecap="round"/><circle cx="185" cy="243" r="4" fill="#e58ca8"/><circle cx="223" cy="244" r="4" fill="#e58ca8"/><circle cx="258" cy="242" r="4" fill="#e58ca8"/>
+<!-- candle -->
+<rect x="217" y="164" width="15" height="51" rx="4" fill="#f6d76f" stroke="#292322" stroke-width="4"/><path d="M224 165 L224 157" stroke="#292322" stroke-width="3" stroke-linecap="round"/>
+<g class="flame"><path d="M224 157 C202 140 219 124 227 113 C230 129 247 136 236 153 C233 157 228 160 224 157Z" fill="#ffb94e" stroke="#e98b59" stroke-width="2"/><path class="flame-core" d="M228 153 C219 146 228 137 230 132 C238 144 235 150 228 153Z" fill="#fff2a8"/></g>
+<g class="smoke" fill="none" stroke="#b8aab0" stroke-width="3" stroke-linecap="round"><path d="M224 151 Q211 139 226 129 Q238 119 226 108"/><path d="M233 146 Q244 137 236 128" opacity=".6"/></g>
+<g fill="#f0d76e" opacity=".9"><circle cx="93" cy="126" r="4"/><circle cx="304" cy="159" r="4"/><circle cx="286" cy="91" r="3"/><circle cx="105" cy="207" r="3"/></g>
+</svg></div>
+<p class="prompt" id="prompt">Close your eyes<br><strong>&amp; make a wish</strong></p>
+<div class="controls"><button class="btn primary" id="tapBtn">💨 Blow out the candle</button></div><p class="status" id="status">Tap the button to blow out the candle ♡</p>
+</main>
+<section class="wish" id="wish"><div class="wish-icon">💖</div><h2>Close your eyes<br>&amp; make a wish</h2><p>May your birthday wish come true ✨</p><button class="btn secondary" onclick="location.reload()">Make another wish ↻</button><button class="btn primary" id="nextModule" style="display:none;position:relative;z-index:5;margin:0 auto 28px" type="button" onclick="location.href='./module4.html'">Continue to the roses →</button>
+</section>
+<script>
+const stage = document.getElementById('stage');
+const prompt = document.getElementById('prompt');
+const statusText = document.getElementById('status');
+const tapBtn = document.getElementById('tapBtn');
+const wish = document.getElementById('wish');
+let blown = false;
+
+function extinguish() {
+  if (blown) return;
+  blown = true;
+  stage.classList.add('blown');
+  prompt.innerHTML = 'Your wish is in the universe <strong>♡</strong>';
+  statusText.textContent = 'Wish made ✨';
+  tapBtn.disabled = true;
+  tapBtn.textContent = '✨ Candle blown out';
+  setTimeout(() => { wish.classList.add('show'); document.getElementById('nextModule').style.display='inline-block'; }, 1700);
+}
+
+tapBtn.addEventListener('click', extinguish);
+</script></body></html>
